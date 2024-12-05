@@ -6,8 +6,9 @@
     <meta name="description" content="PodOS - gabinet podologiczny we Wrocławiu – Profesjonalna pielęgnacja stóp, leczenie wrastających paznokci, pedicure medyczny i więcej. Skontaktuj się z nami już dziś!">
     <meta name="keywords" content="PodOS gabinet podologiczny we Wrocławiu,gabinet podologiczny Wrocław,pedicure medyczny Wrocław,leczenie wrastających paznokci Wrocław,usuwanie modzeli Wrocław,pielęgnacja stóp Wrocław,podologia dziecięca Wrocław,profilaktyka stóp cukrzycowych Wrocław,leczenie odcisków Wrocław,usuwanie kurzajek Wrocław,terapia na ból pięt Wrocław,pielęgnacja stóp Wrocław,pedicure medyczny,leczenie wrastających paznokci,usuwanie modzeli,pielęgnacja stóp,podologia dziecięca,profilaktyka stóp cukrzycowych,leczenie odcisków,usuwanie kurzajek,terapia na ból pięt,PodOS кабінет подологічний у Вроцлаві,медичний педикюр,лікування врослого нігтя,видалення мозолі,догляд за ногами,дитяча подологія,профілактика діабетичної стопи,лікування мозолів,видалення бородавок,лікування болю в п'яті,кабінет подології Вроцлав,медичний педикюр Вроцлав,лікування врослого нігтя Вроцлав,видалення мозолів Вроцлав,догляд за стопами ніг Вроцлав,педіатрична подологія Вроцлав,профілактика зубастих ніг Вроцлав,лікування мозолів Вроцлав,Видалення бородавок Вроцлав,Терапія болю п'ят Вроцлав,догляд за стопами ніг Вроцлав" >
     <title>PodOS</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="mobile-styles.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/mobile-styles.css">
+    <link rel="stylesheet" href="css/services-module.css">
     <link rel="icon" href="/img/favico.ico" type="image/x-icon" widgth="32px" height="32px">
 </head>
 <body>
@@ -20,10 +21,11 @@
             <p class="slogan">PodOS – droga do zdrowych stóp zaczyna się tutaj!</p>
             
             <div class="modalwindow menu-container" id="modalwindow menu-container">
-                <p class="slogan hidden">!Z PodOS wszystkie „czarne” problemy staną się „białym” rozwiązaniem!</p>
+                <p class="slogan hidden">PodOS – droga do zdrowych stóp zaczyna się tutaj!</p>
                 <nav>
                     <ul class="menu">
                         <li><a href="#home" class="active" id="home-link"></a></li>
+                        <li><a href="#o-nas" id="o-nas-link"></a></li>
                         <li><a href="#services" id="services-link"></a></li>
                         <li><a href="#contact" id="contact-link"></a></li>
                         <li><a href="#about" id="about-link"></a></li>
@@ -89,28 +91,91 @@
             <h1 id="home-title" class="home-title"></h1>
             <div class="img-contents">
                 <img src="img/podolog-os-removebg.png" alt="podolog Olena Stepaniuk Wroclaw">
-                <p id="home-intro"></p>
+                <p id="home-content"></p>
             </div>
-            
-            <h2 id="home-why-title"></h2>
-            <div class="img-contents right-side">
-                <p id="home-why-content"></p>
-                <img src="img/gabinet.jpg" alt="gabinet podologa we Wrocławiu">
-            </div>
-        
-            <h2 id="home-services-title"></h2>
-            <div class="img-contents">
-                <img src="img/podolog-os-zabieg-removebg.png" alt="">
-                <p id="home-services-content"></p>
-            </div>
-        
-            <h2 id="home-professional-title"></h2>
-            <p id="home-professional-content"></p>
         </section>
         
+        <!-- About Section -->
+        <section id="about">
+            <h2 id="o-nas"></h2>
+            <div class="img-contents right-side">
+                <p id="o-nas-content"></p>
+                <img src="img/gabinet.jpg" alt="gabinet podologa we Wrocławiu">
+            </div>
+        </section>
 
         <!-- Services Section -->
-        <section id="services" >
+        <section id="services">
+            <h2 id="services-title"></h2>
+            <div class="img-contents">
+                <img src="img/podolog-os-zabieg-removebg.png" alt="">
+                <p id="services-content"></p>
+            </div>
+
+            <div id="select-servises">
+                <div class="wrap-service-items">
+                    <!-- Ліва частина: карусель -->
+                    <div class="service-carousel">
+                        <div class="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="img/carousel1.png" alt="Obrazek 1">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/carousel2.png" alt="Obrazek 2">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/carousel3.png" alt="Obrazek 3">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/carousel4.png" alt="Obrazek 4">
+                                </div>
+                            </div>
+                            <button class="carousel-control prev" onclick="prevSlide()">&#10094;</button>
+                            <button class="carousel-control next" onclick="nextSlide()">&#10095;</button>
+                        </div>
+                    </div>
+        
+                    <!-- Права частина: селект з описом -->
+                    <div class="service-select-area">
+                        <h2 class="services-title">Wybierz usługę:</h2>
+                        <select id="service-select">
+                            <option value="" disabled selected>Usługi i ceny</option>
+                            <option value="consultation">Konsultacja</option>
+                            <option value="pedicure-podologiczny">Pedicure podologiczny</option>
+                            <option value="medical-pedicure">Pedicure podologiczny leczniczy</option>
+                            <option value="pedicure-klasyczny">Pedicure klasyczny z lakierem hybrydowym</option>
+                            <option value="pedicure-spa">Pedicure SPA (pedicure japoński)</option>
+                            <option value="masaz-refleks">Masaż stóp z elementami refleksologii</option>
+                            <option value="kapiele">Kąpiele parafinowe stóp (z masażem)</option>
+                            <option value="kapiele-masaz">Kąpiele parafinowe stóp i dłoni (z masażem)</option>
+                            <option value="grzybica">Grzybica paznokci</option>
+                            <option value="brodaweki">Terapia brodawek wirusowych</option>
+                            <option value="paznokiec">Paznokieć wrastający</option>
+                            <option value="modzel">Usunięcie modzela</option>
+                            <option value="piaty">Leczenie pękających pięt</option>
+                            <option value="unibrace">Instalacja system UniBrace</option>
+                            <option value="klamra-tytanowa">Klamra tytanowa</option>
+                            <option value="odcisk">Usunięcie odcisku</option>
+                        </select>
+                        <div id="service-details" class="service-details hidden">
+                            <!-- Тут буде додаватися контент для обраної послуги -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Professional Section -->
+        <section>
+            <h2 id="professional-title"></h2>
+            <p id="professional-content"></p>
+        </section>
+        
+            
+        
+        <!-- Services Section -->
+        <!-- <section id="services" >
             <h2 id="services-title">Nasze Usługi</h2>
 
             <div class="wrap-service-items">
@@ -176,7 +241,7 @@
                         </div>
                     </div>
                     <div class="service">
-                        <h3 class="service-title">Kąpiele parafinowe stóp (z masażem)&nbsp
+                        <h3 class="service-title">Kąpiele parafinowe stóp (z masażem)
                             <span class="toggle-icon">+</span>
                         </h3>
                         <div class="service-details">
@@ -229,7 +294,7 @@
                         </div>
                     </div>
                     <div class="service">
-                        <h3 class="service-title">Usunięcie  modzela
+                        <h3 class="service-title">Usunięcie modzela
                             <span class="toggle-icon">+</span>
                         </h3>
                         <div class="service-details">
@@ -281,8 +346,9 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
 
+        <!-- Carousel Section 
         <section id="carousel">
             <div class="carousel">
                 <div class="carousel-inner">
@@ -302,29 +368,7 @@
                 <button class="carousel-control prev" onclick="prevSlide()">&#10094;</button>
                 <button class="carousel-control next" onclick="nextSlide()">&#10095;</button>
             </div>
-        </section>
-
-        <!-- Carousel Section -->
-        <section id="carousel">
-            <div class="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="img/carousel1.png" alt="Obrazek 1">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="img/carousel2.png" alt="Obrazek 2">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="img/carousel3.png" alt="Obrazek 3">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="img/carousel4.png" alt="Obrazek 3">
-                    </div>
-                </div>
-                <button class="carousel-control prev" onclick="prevSlide()">&#10094;</button>
-                <button class="carousel-control next" onclick="nextSlide()">&#10095;</button>
-            </div>
-        </section>    
+        </section>-->    
 
         <!-- Contact Section -->
         <section id="contact">
@@ -405,6 +449,7 @@
     <script src="js/scrollbutton.js" defer></script>
     <script src="js/caurosel.js" defer></script>
     <script src="js/menu-mobile.js" defer></script>
+    <script src="js/services-module.js" defer></script>
     <script src="js/spoiler.js"></script>
 </body>
 </html>
