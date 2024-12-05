@@ -23,6 +23,13 @@
         background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url('img/podos_background-mobile.webp');
     }
 
+    section {
+        margin-bottom: 80px;
+    }
+
+    #home-title, #o-nas, #professional-title {
+        padding-top: 0;
+    }
     .img-contents {
         flex-direction: column;
         align-items: center;
