@@ -4,6 +4,7 @@ const translations = {
         "home-link": "Główna",
         "o-nas-link": "Dlaczego PodOS",
         "services-link": "Usługi",
+
         "contact-link": "Kontakt",
         "blog": "Blog",
         // Home Section
@@ -14,7 +15,7 @@ const translations = {
         "o-nas-content": "Gabinet podologiczny PodOS we Wrocławiu to przestrzeń stworzona z myślą o Twoim komforcie i zdrowiu. Oferta PodOS obejmuje zarówno profilaktykę, jak i leczenie schorzeń takich jak: wrastające paznokcie, odciski, modzele, grzybica stóp i paznokci itp. Dzięki nowoczesnym technologiom i specjalistycznym lekom leczenie w moim gabinecie jest bezpieczne i skuteczne. Oferuję konsultacje, które pomagają zrozumieć przyczyny problemów i znaleźć optymalne sposoby ich rozwiązania.",
         // Services Section
         "services-title": "Usługi i ceny w PodOS Gabinet Podologiczny Wrocław",
-        "services-content": "W swojej pracy stawiam na przejrzystość i indywidualne podejście do klienta, a ceny są przystępne. Oferuję w szczególności: konsultację podologiczną 100 zł, pedicure klasyczny z lakierem hybrydowym od 220 zł, pedicure medyczny od 200 zł, usuwanie modzely i odcisków od 100 zł (pełny cennik dostępny pod tym linkiem). Gabinet podologiczny PodOS we Wrocławiu to miejsce komfortu, gdzie każdy zabieg dostosowywany jest do potrzeb pacjenta, co pozwala na osiągnięcie optymalnych efektów. Dlatego radzę umówić się na wizytę, by Twoje stopy mogły cieszyć się zdrowiem i pięknym wyglądem.",
+        "services-content": "W swojej pracy stawiam na przejrzystość i indywidualne podejście do klienta, a ceny są przystępne. Oferuję w szczególności: konsultację podologiczną 100 zł, pedicure klasyczny z lakierem hybrydowym od 220 zł, pedicure medyczny od 200 zł, usuwanie modzely i odcisków od 100 zł (pełny cennik dostępny poniżej). Gabinet podologiczny PodOS we Wrocławiu to miejsce komfortu, gdzie każdy zabieg dostosowywany jest do potrzeb pacjenta, co pozwala na osiągnięcie optymalnych efektów. Dlatego radzę umówić się na wizytę, by Twoje stopy mogły cieszyć się zdrowiem i pięknym wyglądem.",
         // Professional Section
         "professional-title": "Gabinet podologiczny Wrocław – zaufaj profesjonaliście",
         "professional-content": "PodOS to nie tylko miejsce zabiegów, ale także centrum edukacyjne. Uczymy naszych pacjentów, jak dbać o stopy na co dzień i unikać nawracających problemów. Wybierając nasz gabinet podologiczny Wrocław, zyskujesz gwarancję opieki na najwyższym poziomie. Odwiedź PodOS i zobacz, jak możemy Ci pomóc!",
