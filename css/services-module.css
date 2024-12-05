@@ -1,0 +1,133 @@
+.wrap-service-items {
+    display: flex;
+    gap: 20px;
+    flex-direction: row-reverse;
+    margin-top: 40px;
+}
+
+.service-carousel, 
+.service-select-area {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.service-carousel .carousel {
+    position: relative;
+    max-width: 500px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px #32a201;
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.3s ease;
+}
+
+.carousel-item img {
+    width:100%;
+    border-radius: 10px;
+} 
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.carousel-control.prev {
+    left: 10px;
+}
+
+.carousel-control.next {
+    right: 10px;
+}
+
+.carousel-item {
+    min-width: 100%;
+    opacity: 0; /* Початково приховані */
+    transition: opacity 0.5s ease; /* Плавний перехід для прозорості */
+    position: absolute; /* Щоб усі елементи були в одному місці */
+    top: 0;
+    left: 0;
+    text-align: center;
+}
+
+.carousel-item.active {
+    opacity: 1; /* Показ активного слайду */
+    position: relative; /* Активний слайд відображається на своєму місці */
+}
+
+.carousel-control.next {
+    right: 10px;
+}
+
+.service-select-area {
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    
+    margin-right: 0px;
+}
+
+.services-title {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    margin-top: 0;
+}
+
+#service-select {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.service-details {
+    padding: 15px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    color: #333;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px #32a201;
+    max-width: 400px;
+    margin-top: 20px; 
+} 
+.service-details.hidden {
+    display: none;
+}
+
+
+/* Адаптивність */
+@media (max-width: 768px) {
+    .wrap-service-items {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .service-select-area {
+        order: 1;
+    }
+
+    .service-carousel {
+        order: 2;
+    }
+}
+ @media (min-width: 1440px) {
+    .service-select-area {
+        margin-right: 40px;
+    }
+
+    .carousel-item img {
+        width: auto;
+    }
+ }
