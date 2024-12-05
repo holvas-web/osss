@@ -53,13 +53,13 @@ document.addEventListener("DOMContentLoaded", function () {
         `,
         "grzybica":`
             <h3>Grzybica paznokci</h3>
-            <p><b>Cena:</b> 150 zł</p>
+            <p><b>Cena:</b> od 150 zł</p>
             <p>Diagnoza podologiczna, opracowanie i leczenie, aplikacja produkty leczniczego.</p>
             <p><b>Czas trwania:</b> do 60 min.</p>
         `,
         "brodaweki":`
             <h3>Terapia brodawek wirusowych</h3>
-            <p><b>Cena:</b> od 150 zł (1 wizyta), 100 zł (2 wizyta)</p>
+            <p><b>Cena:</b> 150 zł (1 wizyta), 100 zł (2 wizyta)</p>
             <p>Opracowanie brodawek, leczenie.</p>
             <p><b>Czas trwania:</b> do 30 min.</p>
         `,
