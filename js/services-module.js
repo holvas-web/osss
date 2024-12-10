@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
         `,
         "pedicure-spa":`
             <h3>Pedicure SPA (pedicure japoński)</h3>
-            <p><b>Cena:</b> od 200 zł</p>
+            <p><b>Cena:</b> od 220 zł</p>
             <p><b>Zabieg:</b> Оpracowanie podeszwy stóp, skrócenie  i oczyszczenie paznokci, aplikacja preparatów kosmetycznych, wykonanie pedicure metodą mechanicznego wcierania pasty specjalniej leczniczej w płytkę paznokcia i polerowanie pudrem mineralnym.</p>
             <p><b>Czas trwania:</b> do 120 min.</p>
         `,
