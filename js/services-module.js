@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
         "pedicure-spa":`
             <h3>Pedicure SPA (pedicure japoński)</h3>
             <p><b>Cena:</b> od 220 zł</p>
-            <p><b>Zabieg:</b> Оpracowanie podeszwy stóp, skrócenie  i oczyszczenie paznokci, aplikacja preparatów kosmetycznych, wykonanie pedicure metodą mechanicznego wcierania pasty specjalnej leczniczej w płytkę paznokcia i polerowanie pudrem mineralnym.</p>
+            <p><b>Zabieg:</b> Оpracowanie podeszwy stóp, skrócenie  i oczyszczenie paznokci, aplikacja preparatów kosmetycznych, wykonanie pedicure metodą mechanicznego wcierania pasty specjalniej leczniczej w płytkę paznokcia i polerowanie pudrem mineralnym.</p>
             <p><b>Czas trwania:</b> do 120 min.</p>
         `,
         "masaz-refleks":`
@@ -82,7 +82,7 @@ document.addEventListener("DOMContentLoaded", function () {
             <p><b>Czas trwania:</b> do 60 min.</p>
         `,
         "unibrace":`
-            <h3>Instalacja system UniBrace</h3>
+            <h3>Instalacja systemu UniBrace</h3>
             <p><b>Cena:</b> od 200 zł</p>
             <p><b>Zabieg:</b> Poprawa kształtu, zapobieganie procesu zapalnego i wrastaniu paznokcia w skórę.</p>
             <p><b>Czas trwania:</b> do 30 min. (1 palec)</p>

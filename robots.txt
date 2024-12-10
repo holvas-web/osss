@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: 
+Sitemap: https://podoswroclaw.pl
+Disallow: /cgi-bin/

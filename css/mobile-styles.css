@@ -169,6 +169,7 @@
 
     .desktop-btn {
         display: inline-block;
+        color: var(--second-color);
     }
 }
 
