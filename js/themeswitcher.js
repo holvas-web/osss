@@ -17,6 +17,8 @@ function toggleTheme(theme) {
     updateActiveThemeButton(theme);
 }
 
+localStorage.removeItem('theme');
+
 // Функція для оновлення активного стану кнопок
 function updateActiveThemeButton(selectedTheme) {
     const themeButtons = document.querySelectorAll('.theme-switcher button');
@@ -29,10 +31,17 @@ function updateActiveThemeButton(selectedTheme) {
     });
 }
 
-// Ініціалізація теми при завантаженні сторінки
 function initializeTheme() {
-    const savedTheme = localStorage.getItem('theme') || 'light'; // За замовченням light
-    toggleTheme(savedTheme);
+    const savedTheme = localStorage.getItem('theme');
+    const defaultTheme = 'light'; // Завжди використовуємо 'light', якщо нічого не збережено
+    if (!savedTheme) {
+        // Якщо тема ще не збережена, використовуємо за замовченням
+        toggleTheme(defaultTheme);
+    } else {
+        // Якщо збережена тема є, застосовуємо її
+        toggleTheme(savedTheme);
+    }
+    console.log(`Застосовується тема: ${savedTheme || defaultTheme}`);
 }
 
 // Викликаємо ініціалізацію теми при завантаженні
